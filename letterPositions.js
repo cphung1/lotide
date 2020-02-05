@@ -11,7 +11,7 @@ const eqArrays = function(arrayOne, arrayTwo) {
 };
 
 const assertArraysEqual = function(firstArray, secondArray) {
-  const result = eqArrays(firstArray, secondArray); 
+  const result = eqArrays(firstArray, secondArray);
   if (!result) {
     console.log(`🛑🛑🛑 Arrays are not equal.`);
   } else {
@@ -22,15 +22,15 @@ const assertArraysEqual = function(firstArray, secondArray) {
 
 const changeStrToArray = function(string) {
   string = string.split('');
-  return string
+  return string;
 };
 
 const letterPositions = function(sentence) {
   const results = {};
   for (const [index, val] of sentence.entries()) {
     if (val !== ' ') {
-      if(results[val]) {
-        results[val].push(index); 
+      if (results[val]) {
+        results[val].push(index);
       } else {
         results[val] = [index];
       }
@@ -44,8 +44,8 @@ const letterPositions = function(sentence) {
 let sentence = changeStrToArray("lighthouse in the house");
 let actualOutput = letterPositions(sentence);
 
-assertArraysEqual(actualOutput['h'], [ 3, 5, 15, 18 ]); 
-assertArraysEqual(actualOutput[' '], undefined); 
+assertArraysEqual(actualOutput['h'], [ 3, 5, 15, 18 ]);
+assertArraysEqual(actualOutput[' '], undefined);
 assertArraysEqual(actualOutput['z'], undefined);
 assertArraysEqual(actualOutput['n'], [' ']);
 assertArraysEqual(actualOutput['n'], [11]);
