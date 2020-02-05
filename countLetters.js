@@ -35,4 +35,3 @@ let actualOutput = countLetters(inputPhrase);
 assertEqual(actualOutput['l'], 1);
 assertEqual(actualOutput[' '], undefined);
 assertEqual(actualOutput['h'], 4);
-
