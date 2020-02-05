@@ -41,6 +41,7 @@ const letterPositions = function(sentence) {
 };
 
 
+//Test Cases
 let sentence = changeStrToArray("lighthouse in the house");
 let actualOutput = letterPositions(sentence);
 

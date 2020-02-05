@@ -28,7 +28,7 @@ const countLetters = function(word) {
   return results
 };
 
-
+//Test cases
 let inputPhrase = getRidOfSpaces(changeToLowerCase("lighthouse in the house"))
 let actualOutput = countLetters(inputPhrase);
 
