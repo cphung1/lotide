@@ -10,9 +10,9 @@ const eqArrays = function(arrayOne, arrayTwo) {
 const assertArraysEqual = function(firstArray, secondArray) {
   const result = eqArrays(firstArray, secondArray); 
   if (!result) {
-    console.log(`🛑🛑🛑 Arrays are not equal.`);
+    console.log(`🛑🛑🛑 Arrays are not equal. [${firstArray}] !== [${secondArray}]`);
   } else {
-    console.log(`✅✅✅ Arrays are equal.`);
+    console.log(`✅✅✅ Arrays are equal.[${firstArray}] === [${secondArray}]`);
   }
 };
 
