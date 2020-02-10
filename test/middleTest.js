@@ -1,10 +1,13 @@
-const assertArraysEqual = require('../assertArraysEqual');
+const assert = require('chai').assert;
 const middle = require('../middle');
 
-assertArraysEqual(middle([1]), middle([1, 2])); // equal: both are empty arrays
-assertArraysEqual(middle([1, 2, 3, 4]), middle([1, 2, 4, 6])); // not equal
-assertArraysEqual(middle([1, 2, 3, 4, 5]), middle([1, 2, 3, 4, 5])); // equal
-assertArraysEqual(middle([1, 2, 3, 4, 5]), middle([1, 2, 3, 4])); // not equal: not same lengths
-assertArraysEqual(middle([1, 2, 'three', 4, 5, 'six']), middle([1, 2, 'three', 4, 5, 'six'])); // equal
-assertArraysEqual(middle([1, 2, 'three', 4, 5, 'six']), middle([1, 2, 3, 4, 5, 'six'])); // not equal
-assertArraysEqual(middle([1, 2, 3, 4]), middle(['one', 'two', 'three', 'four'])); // not equal
+describe('#middle', () => {
+  it('returns [2] for middle([1, 2, 3]),', 
+    () =>  assert.deepEqual(middle([1, 2, 3]), [2]));
+  it('returns [3] for middle([1, 2, 3, 4, 5]),', 
+    () =>  assert.deepEqual(middle([1, 2, 3, 4, 5]), [3]));
+  it('returns [5, 6] for middle([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]),', 
+    () =>  assert.deepEqual(middle([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]), [5, 6]));
+  it('returns [] for middle([1, 2])', 
+    () => assert.deepEqual(middle([1, 2]), []));
+});
