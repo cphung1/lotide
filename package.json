@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
-  "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "name": "@cphung1/lotide",
+  "version": "1.0.1",
+  "description": "lotide project from Lighthouse Labs bootcamp: a mini clone of lodash",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -20,7 +20,7 @@
     "type": "git",
     "url": "git+https://github.com/cphung1/lotide.git"
   },
-  "author": "",
+  "author": "Cathy Phung",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/cphung1/lotide/issues"
